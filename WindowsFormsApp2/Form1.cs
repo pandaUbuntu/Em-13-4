@@ -68,13 +68,13 @@ namespace WindowsFormsApp2
 
             if (id <= 0)
             {
-                MessageService.ShowWarning("Please enter a valid ID ");
+                MessageService.ShowWarning("Please ID ");
                 return;
             }
 
             if (string.IsNullOrWhiteSpace(text))
             {
-                MessageService.ShowWarning("Please enter a valid comment");
+                MessageService.ShowWarning("Please enter a valid comment. Test text");
                 return;
             }
 
@@ -88,7 +88,6 @@ namespace WindowsFormsApp2
             {
                 MessageService.ShowInfo("Comment updated successfully!");
                 this.UpdateCommentText.Text = "";
-                this.UpdateCommentRating.Text = "";
                 this.UpdateCommentID.Text = "";
             }
             else

@@ -30,5 +30,10 @@ namespace WindowsFormsApp2
         {
             MessageBox.Show(message, title, MessageBoxButtons.OK, icon);
         }
+
+        public static string GetMessage(string message)
+        {
+            return message;
+        }
     }
 }
